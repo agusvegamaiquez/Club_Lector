@@ -20,14 +20,14 @@ header {
     list-style-type: none;
     text-decoration: none;
     color: black;
-    font-size: small;
+    font-size: medium;
 }
 .header_imagen{
     width: 70px;
 }
 .menu_principal li {
     display: inline-block;
-    margin: 0.5rem 0.5rem; 
+    margin: 1rem 0.5rem; 
 }
 .contenedor_logotitulo{
     align-items:center;
@@ -47,7 +47,7 @@ nav a:hover{
     transition: all 0.9s;
 }
     /*CAMBIO EN EL HEADER/NAV GENERAL*/
-@media only screen and ( max-width:650px){
+@media only screen and ( max-width:730px){
     header{
         display: grid;
         grid-template-columns:100%;
@@ -70,17 +70,18 @@ nav a:hover{
         justify-content: center;
     }
 }
-@media only screen and ( max-width:413px){
+@media only screen and ( max-width:528px){
     nav a{
         display: flex;
         justify-content: center;
         padding: 0.3rem 0.3rem;
     }
 }
-@media only screen and ( max-width:324px){
+@media only screen and ( max-width:380px){
     .menu_principal li {
         display: inline-block;
         margin: 0.1rem 0.1rem; 
+        font-size: small;
     }  
 }
 /*MAIN*/
@@ -92,7 +93,123 @@ body{
 .imagen_index{
     width: 100%;
     height: 700px;
+    box-shadow: 0px 8px 4px -1px rgba(0,0,0,0.49);
 }
+.main {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 5rem 5rem;
+    justify-content: center;
+}
+.imagen_main{
+    width: 1200px;
+    margin: 1rem;
+    
+}
+.titulo_main {
+    margin: 1rem 1rem;
+}
+.main p{
+    margin-bottom:2rem;
+    padding:1rem 1rem;
+}
+.button a:hover{ 
+    background-color:#93b49e;
+    color:#FBF9F8;
+    transform:scale(1,1);
+    transition: all 0.9s;
+}
+.button a{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+    background-color:#DFB59D;
+    text-decoration: none;
+    color: #564242;
+}
+#idea{
+    flex-direction: row-reverse;
+}
+    /*PANTALLAS XS SM MD INDEX*/
+    @media only screen and ( max-width:980px){
+        /*General*/
+        .grilla_idx{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:150px 85% 255px;
+            grid-template-areas:"header"
+                                "main"
+                                "footer";
+        }
+        /*HEADER*/
+        .headerix{
+            grid-template-areas:"header";
+        }
+        /*MAIN destacados*/
+        .imagen_index{
+            width: 100%;
+            height: 500px;
+        }
+        .sectionix{
+            grid-template-areas:"main";
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .main{
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+        #idea{
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .main p{
+            margin-bottom:1rem;
+            padding:0.1rem;
+        }
+        .imagen_main{
+            width: 100%;
+            margin: 0.1rem;
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-template-areas:"footer";
+        }    
+    }
+        /*PANTALLAS LG INDEX*/
+    @media only screen and (min-width:980px ){
+        /*General*/
+        .grilla_idx{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:150px 80% 255px;
+            grid-template-areas:"header"
+                                "main"
+                                "footer";
+        }
+        /*HEADER*/
+        .headerix{
+            grid-template-areas:"header";
+        }
+        /*MAIN destacados*/
+        .sectionix{
+            grid-template-areas:"main";
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-template-areas:"footer";
+        }      
+    }
 /*MAIN nosotras*/
 .main_nos{
     margin: 1rem;
@@ -103,50 +220,57 @@ body{
     font-weight: bolder;
     font-style: normal;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     display: flex;
     justify-content: center;
 }
-.nosotras_con{
+.main_infons{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin: 2rem 2rem;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 2px 8px 4px 2px rgba(0,0,0,0.49);
+}
+.main_infons:hover{
+    background-color: #c5d6ca;
+    transition: all 1s;
+}
+#filo{
+    flex-direction: row-reverse;
+}
+.imagenes_indv{
+    margin: 1rem; 
+    width: 40%; 
+    filter: brightness(100%);
+}
+
+.h2_div_inf{
+    margin-bottom: 1.4rem 1rem;
+    padding:0rem 1rem ;
+
 }
 .socios_img{
     display: flex;
     justify-content: space-around;
 }
-.imagenes_nos{
-    display: flex;
-    flex-direction: column;
-}
 .integrantes{ 
+    margin: 2rem;
     filter: invert(20%);
 }
 .integrantes:hover{ 
     filter: invert(0%);
     transition: all 1s;
-}
-.imagenes_indv{
-    margin: 1rem;
-}
-.imagenes_indv:hover{
-    filter: brightness(70%);
-    transition: all 0.9s;
-}
-.div_inf_nos{
-    margin: 2rem 1rem;
-}
-.h2_div_inf{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-}
-.ul_filo{
-    list-style-type: circle;
-    margin: 0.5rem 0rem 0rem 2rem;
-    font-size:medium;
-}
 
+}
+.parrafo_nos{
+    margin-bottom: 1.4rem 1rem;
+    padding:1.4rem 1rem;
+}
+.parrafo_nos{
+    margin-bottom: 1.4rem 1rem;
+    padding:1.4rem 1rem;
+}
  /*MAIN BIBLIOTECA*/ 
  .h2_biblio{
     font-size:300%;
@@ -272,6 +396,7 @@ body{
     padding: 2rem 0.5rem 0rem 0rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .section_tarjetas{
     display: flex;
@@ -298,6 +423,7 @@ body{
     background-color: #f8eee3;
     width: 30%;
     padding: 0.5rem 1rem;
+    box-shadow: 2px 8px 4px 2px rgba(0,0,0,0.49);
 }
 .imagen_tarjeta{
     padding: 0.1rem ;
@@ -325,6 +451,7 @@ body{
     }
     .h2{
         font-size:200%;
+        text-align: center;
     }
     .section_tarjetas{
         display: inline-block;
@@ -348,7 +475,7 @@ body{
     .grilla_dest{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:150px 70% 255px;
+        grid-template-rows:105px 70% 255px;
         grid-template-areas:"header"
                             "main"
                             "footer";
