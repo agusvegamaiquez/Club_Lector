@@ -84,6 +84,19 @@ nav a:hover{
         font-size: small;
     }  
 }
+@media only screen and ( max-width:280px){
+    .menu_principal li {
+        display: inline-block;
+        margin: 1px; 
+        font-size:x-small;
+    }  
+    nav a{
+        border-radius: 5rem;
+        padding: 0.2rem;
+        background-color:#DFB59D;
+        color: #564242;
+    }
+}
 /*MAIN*/
 body{
     background-color:rgb(255, 249, 241);
@@ -133,6 +146,7 @@ body{
 #idea{
     flex-direction: row-reverse;
 }
+
     /*PANTALLAS XS SM MD INDEX*/
     @media only screen and ( max-width:980px){
         /*General*/
@@ -192,7 +206,7 @@ body{
         .grilla_idx{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:150px 80% 255px;
+            grid-template-rows:105px 80% 255px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
@@ -211,11 +225,8 @@ body{
         }      
     }
 /*MAIN nosotras*/
-.main_nos{
-    margin: 1rem;
-}
 .h2_nos{
-    font-size:3rem;
+    font-size:400%;
     background-color:rgb(253, 236, 227);
     font-weight: bolder;
     font-style: normal;
@@ -237,6 +248,7 @@ body{
 }
 .imagenes_indv{
     margin: 1rem; 
+    height:200px;
     width: 40%; 
     filter: brightness(100%);
 }
@@ -257,20 +269,94 @@ body{
 .integrantes:hover{ 
     filter: invert(0%);
     transition: all 1s;
+}
+.parrafo_nos{
+    margin-bottom: 1.4rem 1rem;
+    padding:1.4rem 1rem;
+}
+.parrafo_nos{
+    margin-bottom: 1.4rem 1rem;
+    padding:1.4rem 1rem;
+}
 
-}
-.parrafo_nos{
-    margin-bottom: 1.4rem 1rem;
-    padding:1.4rem 1rem;
-}
-.parrafo_nos{
-    margin-bottom: 1.4rem 1rem;
-    padding:1.4rem 1rem;
-}
+    /*PANTALLAS XS SM MD INDEX*/
+    @media only screen and ( max-width:760px){
+        /*General*/
+        .grilla_nos{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:150px 90% 255px;
+            grid-template-areas:"header"
+                                "main"
+                                "footer";
+        }
+        /*HEADER*/
+        .destacados_header{
+            grid-template-areas:"header";
+        }
+        /*MAIN destacados*/
+        .main_nos{
+            grid-template-areas:"main";
+            margin: 0rem;
+        }
+        .h2_nos{
+            font-size:200%;
+        }
+        .main_infons{
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #filo{
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            text-align: center;        
+        }
+        .imagenes_indv{
+            width: 90%; 
+        }
+         /*FOOTER*/
+        .footer_index{
+            grid-template-areas:"footer";
+        } 
+        .socios_img{
+            display: flex;
+            display: block;
+            text-align: center;
+        }    
+        .integrantes{ 
+            margin:0.1rem;
+        }
+    }
+        /*PANTALLAS LG INDEX*/
+    @media only screen and (min-width:760px ){
+        /*General*/
+        .grilla_nos{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:105px 75% 255px;
+            grid-template-areas:"header"
+                                "main"
+                                "footer";
+        }
+        /*HEADER*/
+        .destacados_header{
+            grid-template-areas:"header";
+        }
+        /*MAIN destacados*/
+        .main_nos{
+            grid-template-areas:"main";
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-template-areas:"footer";
+        }      
+    }
  /*MAIN BIBLIOTECA*/ 
  .h2_biblio{
     font-size:300%;
-    background-color:rgb(253, 236, 227);
     font-weight: bolder;
     font-style: normal;
     display: flex;
@@ -279,7 +365,6 @@ body{
 }
 .cont_biblio{
     margin: 1rem 1rem;
-    background-color: rgb(253, 236, 227);
     display: grid;
     grid-template-columns:100%;
     grid-template-rows: 19% 19% 19% 19% 19%;
@@ -293,9 +378,9 @@ body{
     width: 100%;
     height: 400px;
 }.div_main{
-    padding: 8px;
+    padding: 5px;
 }
-.cont_main:hover{
+#principal:hover{
     background-color: #aac2b2;
     transform:scale(10.5px,10.5px);
     transition: all 1s;
@@ -638,7 +723,6 @@ footer a{
 @media only screen and ( max-width:460px){
     .footer_index{
         display: inline;
-
     }
     .footer_logo{
         display: inline;
