@@ -57,11 +57,11 @@ nav a:hover{
         row-gap:20%;
     }
     .contenedor_logotitulo{
-        grid-template-areas:"header";
+        grid-area:"header";
         justify-content: center;
     }
     nav{
-        grid-template-areas:"nav";
+        grid-area:"nav";
         display: flex;
         justify-content: center;
     }
@@ -112,7 +112,7 @@ body{
     display: flex;
     align-items: center;
     margin: auto;
-    padding: 5rem 5rem;
+    padding: 2rem;
     justify-content: center;
 }
 .imagen_main{
@@ -146,7 +146,6 @@ body{
 #idea{
     flex-direction: row-reverse;
 }
-
     /*PANTALLAS XS SM MD INDEX*/
     @media only screen and ( max-width:980px){
         /*General*/
@@ -160,7 +159,7 @@ body{
         }
         /*HEADER*/
         .headerix{
-            grid-template-areas:"header";
+            grid-area:"header";
         }
         /*MAIN destacados*/
         .imagen_index{
@@ -168,7 +167,7 @@ body{
             height: 500px;
         }
         .sectionix{
-            grid-template-areas:"main";
+            grid-area:"main";
             display: inline-block;
             display: flex;
             flex-direction: column;
@@ -197,7 +196,7 @@ body{
         }
         /*FOOTER*/
         .footer_index{
-            grid-template-areas:"footer";
+            grid-area:"footer";
         }    
     }
         /*PANTALLAS LG INDEX*/
@@ -213,15 +212,15 @@ body{
         }
         /*HEADER*/
         .headerix{
-            grid-template-areas:"header";
+            grid-area:"header";
         }
         /*MAIN destacados*/
         .sectionix{
-            grid-template-areas:"main";
+            grid-area:"main";
         }
         /*FOOTER*/
         .footer_index{
-            grid-template-areas:"footer";
+            grid-area:"footer";
         }      
     }
 /*MAIN nosotras*/
@@ -252,7 +251,6 @@ body{
     width: 40%; 
     filter: brightness(100%);
 }
-
 .h2_div_inf{
     margin-bottom: 1.4rem 1rem;
     padding:0rem 1rem ;
@@ -278,25 +276,24 @@ body{
     margin-bottom: 1.4rem 1rem;
     padding:1.4rem 1rem;
 }
-
     /*PANTALLAS XS SM MD INDEX*/
     @media only screen and ( max-width:760px){
         /*General*/
         .grilla_nos{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:150px 90% 255px;
+            grid-template-rows:150px 85% 255px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
         }
         /*HEADER*/
         .destacados_header{
-            grid-template-areas:"header";
+            grid-area:"header";
         }
         /*MAIN destacados*/
         .main_nos{
-            grid-template-areas:"main";
+            grid-area:"main";
             margin: 0rem;
         }
         .h2_nos{
@@ -319,7 +316,7 @@ body{
         }
          /*FOOTER*/
         .footer_index{
-            grid-template-areas:"footer";
+            grid-area:"footer";
         } 
         .socios_img{
             display: flex;
@@ -343,15 +340,15 @@ body{
         }
         /*HEADER*/
         .destacados_header{
-            grid-template-areas:"header";
+            grid-area:"header";
         }
         /*MAIN destacados*/
         .main_nos{
-            grid-template-areas:"main";
+            grid-area:"main";
         }
         /*FOOTER*/
         .footer_index{
-            grid-template-areas:"footer";
+            grid-area:"footer";
         }      
     }
  /*MAIN BIBLIOTECA*/ 
@@ -418,11 +415,11 @@ body{
     }
     /*HEADER*/
     header {
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN bibliotecas*/
     .main_biblio{
-        grid-template-areas:"main";
+        grid-area:"main";
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows:50% 50%;
@@ -438,7 +435,7 @@ body{
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer"
+        grid-area:"footer"
     }
 }
     /*PANTALLAS LG BIBLIOTECA*/
@@ -454,11 +451,11 @@ body{
     }
     /*HEADER*/
     header {
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN bibliotecas*/
     .main_biblio{
-        grid-template-areas:"main";
+        grid-area:"main";
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-rows:100%;
@@ -466,7 +463,7 @@ body{
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer"
+        grid-area:"footer"
     }    
 }
 /*MAIN Destacados */
@@ -524,11 +521,11 @@ body{
     }
     /*HEADER*/
     .destacados_header{
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN destacados*/
     .sectiond{
-        grid-template-areas:"main";
+        grid-area:"main";
     }
     .h2{
         font-size:200%;
@@ -547,7 +544,7 @@ body{
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer";
+        grid-area:"footer";
     }    
 }
     /*PANTALLAS LG DESTACADOS*/
@@ -563,11 +560,11 @@ body{
     }
     /*HEADER*/
     .destacados_header{
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN Destacados*/
     .sectiond{
-        grid-template-areas:"main";
+        grid-area:"main";
     }
     .section_tarjetas{
         gap:2rem;
@@ -576,7 +573,7 @@ body{
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer";
+        grid-area:"footer";
     }
 }
 /*MAIN CONTACTO*/
@@ -628,33 +625,32 @@ form{
     }
     /*HEADER*/
     header {
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN contacto*/
     .section{
-        grid-template-areas:"main";
+        grid-area:"main";
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:40% 60%;
+        grid-template-rows:50% 50%;
         grid-template-areas:"form" 
                             "photo";
     } 
     form{
-        grid-template-areas:"form";
+        grid-area:"form";
         background-color: #f8eee3;
         width: 90%;  
-        margin:auto;
     }
 
     .imagen_contacto{
         grid-template-areas:"photo";
         display: flex;
         width: 90%;
-        margin: auto;
+
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer"
+        grid-area:"footer"
     }
 }
     /*PANTALLAS LG CONTACTO*/
@@ -670,15 +666,15 @@ form{
     }
     /*HEADER*/
     .header {
-        grid-template-areas:"header";
+        grid-area:"header";
     }
     /*MAIN contacto*/
     .grilla_cont{
-        grid-template-areas:"main";
+        grid-area:"main";
     }
     /*FOOTER*/
     .footer_index{
-        grid-template-areas:"footer"
+        grid-area:"footer"
     }
 }
 /*FOOTER*/
@@ -690,6 +686,7 @@ form{
     padding: 1rem 0rem;
     border-top: 1px solid black; 
     background-color:#f8eee3;
+
 }
 .footer_imagen{
     width: 70px;

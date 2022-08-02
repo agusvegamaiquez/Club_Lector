@@ -7,6 +7,7 @@
     <meta name="author" content="Agustina Vega">
     <link rel="icon" href="img/book-icon-.png">
     <link rel="stylesheet" href="css/Styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Club Lector | Inicio</title>
     <!--CLUB LECTOR ES UNA ORGANIZACIÓN INVENTADA PARA ESTE PROYECTO (13_07_2022)-->
 </head>
@@ -31,15 +32,15 @@
                 <img class="imagen_index" src="img/talk.png" alt="">
             </div>
             <section>
-                <div class="main">
-                    <div>
+                <div class="main" data-aos="fade-up" data-aos-duration="3000">
+                    <div >
                         <h2 class="titulo_main">¿Qué hacemos?</h2>
                         <p class="parrafo_main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, delectus, deserunt modi quo debitis ex numquam ab explicabo fugiat odit neque dolores rem doloremque fuga maxime accusantium voluptatem quisquam ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex, fugit, et perspiciatis necessitatibus nostrum quasi blanditiis repellendus est excepturi provident sequi. Fuga quo obcaecati pariatur adipisci officia animi repellendus?</p>
                         <div class="button"><a href="pages/nosotras.html">Descubre más!</a></div>    
                     </div>
                     <img class="imagen_main" src="img/libros-flores.png" alt="">
                 </div>
-                <div class="main" id="idea">
+                <div class="main" id="idea" data-aos="fade-up" data-aos-duration="3000">
                     <div>
                         <h2 class="titulo_main">¿Te gusta la idea?</h2>
                         <p class="parrafo_main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, delectus, deserunt modi quo debitis ex numquam ab explicabo fugiat odit neque dolores rem doloremque fuga maxime accusantium voluptatem quisquam ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex, fugit, et perspiciatis necessitatibus nostrum quasi blanditiis repellendus est excepturi provident sequi. Fuga quo obcaecati pariatur adipisci officia animi repellendus?</p>
@@ -76,5 +77,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
