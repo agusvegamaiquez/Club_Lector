@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
  }
+ 
 /*HEADER*/
 header {
     grid-template-areas:"header";
@@ -20,6 +22,7 @@ header {
     list-style-type: none;
     text-decoration: none;
     color: black;
+    padding-inline-start: 0px;
     font-size: medium;
 }
 .header_imagen{
@@ -103,11 +106,7 @@ body{
     align-items: center;
  }
  /*MAIN index*/
-.imagen_index{
-    width: 100%;
-    height: 700px;
-    box-shadow: 0px 8px 4px -1px rgba(0,0,0,0.49);
-}
+
 .main {
     display: flex;
     align-items: center;
@@ -127,6 +126,7 @@ body{
     margin-bottom:2rem;
     padding:1rem 1rem;
 }
+
 .button a:hover{ 
     background-color:#93b49e;
     color:#FBF9F8;
@@ -143,6 +143,15 @@ body{
     text-decoration: none;
     color: #564242;
 }
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+    box-shadow: 0px 8px 4px -1px rgba(0,0,0,0.49);
+}
+.carousel-inner {
+    box-shadow: 0px 8px 4px -1px rgba(0,0,0,0.49);
+}
+
 #idea{
     flex-direction: row-reverse;
 }
@@ -152,7 +161,7 @@ body{
         .grilla_idx{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:150px 85% 255px;
+            grid-template-rows:150px 85% 305px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
@@ -205,7 +214,7 @@ body{
         .grilla_idx{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:105px 80% 255px;
+            grid-template-rows:105px 90% 255px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
@@ -282,7 +291,7 @@ body{
         .grilla_nos{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:150px 85% 255px;
+            grid-template-rows:150px 85% 3005px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
@@ -333,7 +342,7 @@ body{
         .grilla_nos{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:105px 75% 255px;
+            grid-template-rows:105px 100% 355px;
             grid-template-areas:"header"
                                 "main"
                                 "footer";
@@ -468,7 +477,7 @@ body{
 }
 /*MAIN Destacados */
 .h2{
-    font-size:3rem;
+    font-size:200%;
     font-weight: bolder;
     font-style: normal;
     padding: 2rem 0.5rem 0rem 0rem;
@@ -480,8 +489,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:5rem;
-    margin: 3rem;
+    gap:auto;
+    margin:2rem 0.3rem;
     text-align: center;
 }
 .tarjetas:hover{
@@ -500,7 +509,6 @@ body{
 .tarjetas{
     background-color: #f8eee3;
     width: 30%;
-    padding: 0.5rem 1rem;
     box-shadow: 2px 8px 4px 2px rgba(0,0,0,0.49);
 }
 .imagen_tarjeta{
@@ -514,7 +522,7 @@ body{
     .grilla_dest{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:150px 90% 255px;
+        grid-template-rows:150px 100% 255px;
         grid-template-areas:"header"
                             "main"
                             "footer";
@@ -530,12 +538,6 @@ body{
     .h2{
         font-size:200%;
         text-align: center;
-    }
-    .section_tarjetas{
-        display: inline-block;
-        flex-direction: column;
-        text-align: center;
-        display: grid;
     }
     .tarjetas{
         background-color: #f8eee3;
@@ -567,8 +569,6 @@ body{
         grid-area:"main";
     }
     .section_tarjetas{
-        gap:2rem;
-        margin: 2rem;
         text-align: center;
     }
     /*FOOTER*/
@@ -594,16 +594,13 @@ form{
     height:380px;
     padding: 1rem 1rem;
 }
-.formulario_partes{
-    padding: 0.5rem;
-}
-.input_form{
-    width: 100%;
+.input-group-text{
+    margin:0.2rem;
 }
 #button_submit{
-    margin-top: 1.5rem;
+    margin:2rem 0rem;
     border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     background-color:#DFB59D;
     text-decoration: none;
 }

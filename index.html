@@ -7,6 +7,8 @@
     <meta name="author" content="Agustina Vega">
     <link rel="icon" href="img/book-icon-.png">
     <link rel="stylesheet" href="css/Styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Club Lector | Inicio</title>
     <!--CLUB LECTOR ES UNA ORGANIZACIÓN INVENTADA PARA ESTE PROYECTO (13_07_2022)-->
@@ -29,14 +31,43 @@
         </header>
         <main class="sectionix">
             <div class="img_box">
-                <img class="imagen_index" src="img/talk.png" alt="">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/talk.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/talk.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/talk.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
             <section>
                 <div class="main" data-aos="fade-up" data-aos-duration="3000">
                     <div >
                         <h2 class="titulo_main">¿Qué hacemos?</h2>
                         <p class="parrafo_main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, delectus, deserunt modi quo debitis ex numquam ab explicabo fugiat odit neque dolores rem doloremque fuga maxime accusantium voluptatem quisquam ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex, fugit, et perspiciatis necessitatibus nostrum quasi blanditiis repellendus est excepturi provident sequi. Fuga quo obcaecati pariatur adipisci officia animi repellendus?</p>
-                        <div class="button"><a href="pages/nosotras.html">Descubre más!</a></div>    
+                        <div  class="dropdown">
+                            <button  class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Descubre más!
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="pages/nosotras.html">Nosotras</a></li>
+                              <li><a class="dropdown-item" href="pages/biblioteca.html">Biblioteca</a></li>
+                              <li><a class="dropdown-item" href="pages//destacados.html">Destacados</a></li>
+                            </ul>
+                          </div>   
                     </div>
                     <img class="imagen_main" src="img/libros-flores.png" alt="">
                 </div>
@@ -77,6 +108,8 @@
             </div>
         </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
