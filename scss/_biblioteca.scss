@@ -1,0 +1,129 @@
+
+/*MAIN BIBLIOTECA*/ 
+ .h2_biblio{
+    font-size:300%;
+    font-weight: bolder;
+    font-style: normal;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+.cont_biblio{
+    #principal:hover{
+        background-color: #aac2b2;
+        transform:scale(10.5px,10.5px);
+        transition: all 1s;
+    }
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:"artículo"
+                        "artículo"
+                        "artículo"
+                        "artículo"
+                        "artículo";
+                        
+    .articulos{
+        grid-area:"artículo" ;
+        margin: 1%;
+        padding: 1%;
+        border: 1.5px #564242 solid;
+        &:hover{
+            background-color: #93b49e;
+            transform:scale(10.5px,10.5px);
+            transition: all 1s;
+            font-style:initial;
+            border: none;
+        }
+        .h3_biblio{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    .cont_main{
+        margin: 1rem;
+        padding: 1rem;
+        .div_main{
+            padding: 5px;
+            .imagen_biblio{
+                margin:0.1rem 0rem 1rem 0rem;
+                width: 100%;
+                height: 400px;
+            }
+            .main_h3{
+                font-size: larger;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 5px 0px;
+            }
+        }
+    }
+}
+    /*PANTALLAS  XS SM MD BIBLIOTECA*/
+@media only screen and (max-width:840px ){
+    /*GENERAL*/
+    .grilla{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: none 100% 355px;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+    /*HEADER*/
+        header {
+            grid-area:"header";
+        }
+        /*MAIN bibliotecas*/
+        .main_biblio{
+            grid-area:"main";
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:49% 48%;
+            grid-template-areas:"main" 
+                                "aside";
+            gap: 3%;
+            .cont_main{
+                margin:0.5rem;
+                padding:0.5rem
+            }
+            .h2_biblio{
+                font-size: 200%;
+            }
+            .articulos{
+                margin-left: 0.8rem; 
+                margin-right: 0.8rem ;  
+            }
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer"
+        }     
+    }
+}
+    /*PANTALLAS LG BIBLIOTECA*/
+@media only screen and ( min-width:840px){
+    /*General*/
+        .grilla{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:none 80% 155px;
+            grid-template-areas:"header"
+                                "main"
+                                "footer";
+        /*HEADER*/
+        header {
+            grid-area:"header";
+        }
+        /*MAIN bibliotecas*/
+        .main_biblio{
+            grid-area:"main";
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows:100%;
+            grid-template-areas:"main" "aside";
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer"
+        }
+    }    
+}

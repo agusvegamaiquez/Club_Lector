@@ -1,0 +1,108 @@
+/*MAIN CONTACTO*/
+.section{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    .imagen_contacto{
+        margin: 8px;
+        width: 40%;
+        height:380px;
+    }
+    form{
+        background-color: #f8eee3;
+        width: 50%;
+        height:380px;
+        padding: 1rem 1rem;
+        .form-control:focus  {
+            color: #212529;
+            background-color: #fff;
+            border-color: black !important; 
+            outline: 0;
+            box-shadow: none !important
+        }
+        
+        .input-group-text{
+            margin:0.2rem;
+        }
+        #button_submit{
+            margin:2rem 0rem;
+            border-radius: 2rem;
+            padding: 0.3rem 1.5rem;
+            background-color:#DFB59D;
+            text-decoration: none;
+            &:hover{
+                background-color: #93b49e;
+                color:antiquewhite;
+                transform:scale(1,1);
+            }
+        }
+    }
+}
+
+ /*PANTALLAS  XS SM MD CONTACTO*/
+ @media only screen and (max-width:800px){
+    /*General*/
+    .grilla_cont{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: none 80% 355px;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+        /*HEADER*/
+        header {
+            grid-area:"header";
+        }
+        /*MAIN contacto*/
+        .section{
+            grid-area:"main";
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:50% 50%;
+            grid-template-areas:"form" 
+                                "photo";
+            form{
+            grid-area:"form";
+            background-color: #f8eee3;
+            width: 90%;  
+            }
+            .imagen_contacto{
+                grid-template-areas:"photo";
+                display: flex;
+                width: 90%;
+            }
+            /*FOOTER*/
+            .footer_index{
+                grid-area:"footer"
+            }
+        }
+    }
+
+    } 
+
+/*PANTALLAS LG CONTACTO*/
+@media only screen and ( min-width:800px){
+    /*General*/
+    .grilla_cont{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:none 100% 205px;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+        /*HEADER*/
+        .header {
+            grid-area:"header";
+        }
+        /*MAIN contacto*/
+        .grilla_cont{
+            grid-area:"main";
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer";
+        }
+    }
+}

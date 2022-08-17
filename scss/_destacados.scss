@@ -1,0 +1,101 @@
+/*MAIN Destacados */
+.h2{
+    font-size:200%;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 2rem 0.5rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:auto;
+    margin:2rem 0.3rem;
+    text-align: center;
+    .tarjetas{
+        background-color: #f8eee3;
+        width: 30%;
+        box-shadow: 2px 8px 4px 2px rgba(0,0,0,0.49);
+        .imagen_tarjeta{
+            padding: 0.1rem ;
+            width: 100%;
+            border: 4px double #FBF9F8;
+        }
+        &:hover{
+            background-color: #93b49e;
+            transform:scale(10.5px,10.5px);
+            transition: all 1s;
+            font-style:initial;
+            border: 1px solid #93b49e;
+        }
+        & h3{
+            padding: 0.5rem 0.5rem;
+            font-size: 120%;
+            font-style: normal;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}
+/*PANTALLAS XS SM MD  DESTACADOS*/
+@media only screen and ( max-width:920px){
+    /*General*/
+    .grilla_dest{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:none 65% 305px;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+            /*HEADER*/
+        header{
+            grid-area:"header";
+        }
+        /*MAIN destacados*/
+        .sectiond{
+            grid-area:"main";
+            .h2{
+                font-size:200%;
+                text-align: center;
+            }
+            .tarjetas{
+                background-color: #f8eee3;
+                width: 100%;
+                padding: 0.5rem 1rem;
+            }
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer"; /*NO ANDA Y NO ENTIENDO PQ, DESAPARECE EL BACKGROUNG COLOR Y EL BORDER*/
+        }
+    }    
+}
+/*PANTALLAS LG DESTACADOS*/
+@media only screen and (min-width:920px ){
+    /*GENERAL*/
+    .grilla_dest{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:none 60% 255px;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+        /*HEADER*/
+        header{
+            grid-area:"header";
+        }
+        /*MAIN Destacados*/
+        .sectiond{
+            grid-area:"main";
+            .section_tarjetas{
+                text-align: center;
+            }
+        }
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer";
+        }
+    }
+}

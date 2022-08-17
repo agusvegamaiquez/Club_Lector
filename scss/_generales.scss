@@ -1,0 +1,124 @@
+/*GENERAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+/*HEADER*/
+header {
+    border-bottom: 1px solid black; 
+    background-color:#f8eee3;
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-item{
+        margin: 0.5rem;
+    }
+    .nav-link{
+        border-radius: 5rem;
+        padding: 0.5rem 1rem;
+        background-color:#f8f0e7 ;
+        border:1px solid #DFB59D;
+        text-decoration: none;
+        color: #564242;
+        text-align: center;
+        &:hover{ 
+            border:1px solid #93b49e ;
+            background-color:#93b49e;
+            color:#FBF9F8;
+            transform:scale(1,1);
+            transition: all 0.9s;
+        }
+    }
+}
+/*MAIN*/
+body{
+    background-color:rgb(255, 254, 253) !important;
+    align-items: center;
+ }
+ 
+/*FOOTER*/
+.footer_index{
+    grid-template-areas:"footer";
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+    border-top: 1px solid black; 
+    background-color:#f8eee3;
+    .footer_logo{
+        display: flex;
+        align-items:center;
+        .footer_imagen{
+            width: 70px;
+        }
+        .copyright_cont{
+            margin: 0rem 1rem
+        }
+
+    }
+    .contenedores_footer_logoredes{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        .a{
+            text-decoration: none;
+            color: black;
+        }
+        &:hover{
+            background-color:#93b49e;
+            transform:scale(1,1);
+            transition: all 1s;
+            border-radius: 5rem; 
+        }
+        .logo_redes_footer{
+            width:25px ;
+        }
+    }
+}
+    /*CAMBIO EN EL FOOTER GENERAL*/
+@media only screen and ( max-width:460px){
+    .footer_index{
+        display: inline;
+        .footer_imagen{
+            margin: 0.5rem 0rem;
+        }
+        .footer_logo{
+            display: inline;
+            .copyright_cont{
+                margin: 0.5rem 0rem;
+            }
+        } 
+        .contenedores_footer_logoredes{
+            padding: 0.1rem;
+        }
+    }
+}
+/*CAMBIO EN EL HEADER/NAV GENERAL*/
+@media only screen and ( max-width:323px){
+    .container-fluid{
+        display: inline !important;
+        justify-content: center;
+        margin-bottom: 0rem;
+        .navbar-brand{
+            display: inline;
+            justify-content: center;
+            h1 {
+                text-align: center;
+            }
+            .img_header{
+                text-align: center;
+            }
+        }
+    }
+    .button_nav_h{
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
