@@ -19,17 +19,17 @@
         background-color: #f8eee3;
         width: 30%;
         box-shadow: 2px 8px 4px 2px rgba(0,0,0,0.49);
-        .imagen_tarjeta{
-            padding: 0.1rem ;
-            width: 100%;
-            border: 4px double #FBF9F8;
-        }
         &:hover{
-            background-color: #93b49e;
             transform:scale(10.5px,10.5px);
             transition: all 1s;
             font-style:initial;
             border: 1px solid #93b49e;
+            background-color: #93b49e;
+        }
+        .imagen_tarjeta{
+            padding: 0.1rem ;
+            width: 100%;
+            border: 4px double #FBF9F8;
         }
         & h3{
             padding: 0.5rem 0.5rem;
