@@ -27,15 +27,11 @@
             margin:0.2rem;
         }
         #button_submit{
+            @extend .buttons_model;
             margin:2rem 0rem;
-            border-radius: 2rem;
-            padding: 0.3rem 1.5rem;
             background-color:#DFB59D;
-            text-decoration: none;
             &:hover{
-                background-color: #93b49e;
-                color:antiquewhite;
-                transform:scale(1,1);
+                @include clicks(1px solid #93b49e,scale(1,1))
             }
         }
     }

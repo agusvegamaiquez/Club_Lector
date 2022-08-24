@@ -6,6 +6,21 @@
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
+ @mixin clicks($border,$transform_scale) {
+    background-color: #aac2b2;
+    transform: $transform_scale;
+    transition: all 1s;
+    font-style:initial;
+    color:#FBF9F8;
+    border:$border;
+ }
+ .button_model{
+    border-radius: 5rem;
+    text-decoration: none;
+    color: #564242;
+    text-align: center;
+    padding: 0.5rem 1rem;
+ }
 /*HEADER*/
 header {
     border-bottom: 1px solid black; 
@@ -19,19 +34,11 @@ header {
         margin: 0.5rem;
     }
     .nav-link{
-        border-radius: 5rem;
-        padding: 0.5rem 1rem;
+        @extend .buttons_model;
         background-color:#f8f0e7 ;
         border:1px solid #DFB59D;
-        text-decoration: none;
-        color: #564242;
-        text-align: center;
         &:hover{ 
-            border:1px solid #93b49e ;
-            background-color:#93b49e;
-            color:#FBF9F8;
-            transform:scale(1,1);
-            transition: all 0.9s;
+            @include clicks(1px solid #93b49e,scale(1,1))
         }
     }
 }
@@ -65,15 +72,13 @@ body{
         display: flex;
         align-items: center;
         padding: 0.5rem;
+        border-radius: 5rem; 
         .a{
             text-decoration: none;
             color: black;
         }
         &:hover{
-            background-color:#93b49e;
-            transform:scale(1,1);
-            transition: all 1s;
-            border-radius: 5rem; 
+            @include clicks(1px solid #93b49e,scale(1,1))
         }
         .logo_redes_footer{
             width:25px ;

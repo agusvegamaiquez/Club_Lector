@@ -147,36 +147,33 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: none 85% 305px;
     grid-template-areas: "header" "main" "footer";
-    /*HEADER*/
-    /*MAIN destacados*/
-    /*FOOTER*/ }
+    /*HEADER*/ }
     .grilla_idx .headerix {
-      grid-area: "header"; }
-    .grilla_idx .sectionix {
-      grid-area: "main";
-      display: inline-block;
-      display: flex;
-      flex-direction: column;
-      text-align: center; }
-      .grilla_idx .sectionix .main {
+      grid-area: "header";
+      /*MAIN destacados*/
+      /*FOOTER*/ }
+      .grilla_idx .headerix .sectionix {
+        grid-area: "main";
         display: inline-block;
-        display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 2rem; }
-        .grilla_idx .sectionix .main #idea {
+        text-align: center; }
+        .grilla_idx .headerix .sectionix .main {
           display: inline-block;
-          display: flex;
           flex-direction: column;
-          text-align: center; }
-        .grilla_idx .sectionix .main .main p {
-          margin-bottom: 1rem;
-          padding: 0.1rem; }
-        .grilla_idx .sectionix .main .imagen_main {
-          width: 100%;
-          margin: 0.1rem; }
-    .grilla_idx .footer_index {
-      grid-area: "footer"; } }
+          text-align: center;
+          padding: 2rem; }
+          .grilla_idx .headerix .sectionix .main .main p {
+            margin-bottom: 1rem;
+            padding: 0.1rem; }
+          .grilla_idx .headerix .sectionix .main .imagen_main {
+            width: 100%;
+            margin: 0.1rem; }
+          .grilla_idx .headerix .sectionix .main #alo {
+            display: inline-block;
+            flex-direction: column;
+            text-align: center; }
+      .grilla_idx .headerix .footer_index {
+        grid-area: "footer"; } }
 
 /*PANTALLAS LG INDEX*/
 @media only screen and (min-width: 980px) {
@@ -266,7 +263,6 @@ body {
           width: 90%; }
       .grilla_nos .main_nos #filo {
         display: inline-block;
-        display: flex;
         flex-direction: column;
         text-align: center; }
       .grilla_nos .main_nos .socios_img {
@@ -314,16 +310,16 @@ body {
     background-color: #f8eee3;
     width: 30%;
     box-shadow: 2px 8px 4px 2px rgba(0, 0, 0, 0.49); }
+    .section_tarjetas .tarjetas:hover {
+      transform: scale(10.5px, 10.5px);
+      transition: all 1s;
+      font-style: initial;
+      border: 1px solid #93b49e;
+      background-color: #93b49e; }
     .section_tarjetas .tarjetas .imagen_tarjeta {
       padding: 0.1rem;
       width: 100%;
       border: 4px double #FBF9F8; }
-    .section_tarjetas .tarjetas:hover {
-      background-color: #93b49e;
-      transform: scale(10.5px, 10.5px);
-      transition: all 1s;
-      font-style: initial;
-      border: 1px solid #93b49e; }
     .section_tarjetas .tarjetas h3 {
       padding: 0.5rem 0.5rem;
       font-size: 120%;

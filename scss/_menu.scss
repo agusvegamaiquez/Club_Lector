@@ -29,21 +29,13 @@
     }
     
     .button a{
+        @extend .buttons_model;
         display: inline-block;
-        text-align: center;
         margin: 1.5rem 1rem;
-        border-radius: 5rem;
-        padding: 0.5rem 1.5rem;
         background-color:#DFB59D;
-        text-decoration: none;
-        color: #564242;
         &:hover{ 
-            background-color:#93b49e;
-            color:#FBF9F8;
-            transform:scale(1,1);
-            transition: all 0.9s;
+            @include clicks(1px solid #93b49e,scale(1,1))
         }
-
     }
 }
 /*PANTALLAS XS SM MD INDEX*/
@@ -84,7 +76,6 @@
                     text-align: center; 
                 }
             }
-
     }    
     /*FOOTER*/
     .footer_index{
@@ -92,8 +83,7 @@
     }  
     }  
 }
-    }
-    
+    }  
 /*PANTALLAS LG INDEX*/
 @media only screen and (min-width:980px ){
     /*General*/
