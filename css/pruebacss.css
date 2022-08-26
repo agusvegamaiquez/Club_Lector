@@ -146,7 +146,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 85% 305px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/ }
     .grilla_idx .headerix {
       grid-area: "header";
@@ -154,11 +156,11 @@ body {
       /*FOOTER*/ }
       .grilla_idx .headerix .sectionix {
         grid-area: "main";
-        display: inline-block;
+        display: inline;
         flex-direction: column;
         text-align: center; }
         .grilla_idx .headerix .sectionix .main {
-          display: inline-block;
+          display: inline;
           flex-direction: column;
           text-align: center;
           padding: 2rem; }
@@ -169,7 +171,7 @@ body {
             width: 100%;
             margin: 0.1rem; }
           .grilla_idx .headerix .sectionix .main #alo {
-            display: inline-block;
+            display: inline;
             flex-direction: column;
             text-align: center; }
       .grilla_idx .headerix .footer_index {
@@ -182,7 +184,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 90% 255px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN destacados*/
     /*FOOTER*/ }
@@ -243,7 +247,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 90% 305px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN Nosotros*/
     /*FOOTER*/ }
@@ -281,7 +287,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 205px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*MAIN Nosotros*/
     /*FOOTER*/ }
     .grilla_nos .main_nos {
@@ -333,7 +341,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 65% 305px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN destacados*/
     /*FOOTER*/ }
@@ -359,7 +369,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 60% 255px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN Destacados*/
     /*FOOTER*/ }
@@ -386,7 +398,11 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-  grid-template-areas: "artículo" "artículo" "artículo" "artículo" "artículo"; }
+  grid-template-areas: "artículo"
+ "artículo"
+ "artículo"
+ "artículo"
+ "artículo"; }
   .cont_biblio #principal:hover {
     background-color: #aac2b2;
     transform: scale(10.5px, 10.5px);
@@ -425,7 +441,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 100% 355px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN bibliotecas*/
     /*FOOTER*/ }
@@ -436,7 +454,8 @@ body {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 49% 48%;
-      grid-template-areas: "main"  "aside";
+      grid-template-areas: "main" 
+ "aside";
       gap: 3%; }
       .grilla .main_biblio .cont_main {
         margin: 0.5rem;
@@ -456,7 +475,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 155px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN bibliotecas*/
     /*FOOTER*/ }
@@ -513,7 +534,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 355px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN contacto*/ }
     .grilla_cont header {
@@ -523,7 +546,8 @@ body {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "form"  "photo";
+      grid-template-areas: "form" 
+ "photo";
       /*FOOTER*/ }
       .grilla_cont .section form {
         grid-area: "form";
@@ -543,7 +567,9 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 100% 205px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header"
+ "main"
+ "footer";
     /*HEADER*/
     /*MAIN contacto*/
     /*FOOTER*/ }

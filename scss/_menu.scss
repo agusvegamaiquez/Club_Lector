@@ -54,11 +54,11 @@
         /*MAIN destacados*/
         .sectionix{
             grid-area:"main";
-            display: inline-block;
+            display: inline;
             flex-direction: column;
             text-align: center;
             .main{
-                display: inline-block;
+                display: inline;
                 flex-direction: column;
                 text-align: center;
                 padding: 2rem;
@@ -70,8 +70,8 @@
                     width: 100%;
                     margin: 0.1rem;
                 }
-                #alo{
-                    display: inline-block ;
+                #idea{
+                    display: inline ;
                     flex-direction: column;
                     text-align: center; 
                 }
