@@ -7,6 +7,13 @@
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
+.buttons_model, header .nav-link, .main .button a, .section form #button_submit {
+  border-radius: 5rem;
+  text-decoration: none;
+  color: #564242;
+  text-align: center;
+  padding: 0.5rem 1rem; }
+
 /*HEADER*/
 header {
   border-bottom: 1px solid black;
@@ -17,19 +24,15 @@ header {
   header .nav-item {
     margin: 0.5rem; }
   header .nav-link {
-    border-radius: 5rem;
-    padding: 0.5rem 1rem;
     background-color: #f8f0e7;
-    border: 1px solid #DFB59D;
-    text-decoration: none;
-    color: #564242;
-    text-align: center; }
+    border: 1px solid #DFB59D; }
     header .nav-link:hover {
-      border: 1px solid #93b49e;
-      background-color: #93b49e;
-      color: #FBF9F8;
+      background-color: #aac2b2;
       transform: scale(1, 1);
-      transition: all 0.9s; }
+      transition: all 1s;
+      font-style: initial;
+      color: #FBF9F8;
+      border: 1px solid #93b49e; }
 
 /*MAIN*/
 body {
@@ -41,8 +44,7 @@ body {
   grid-template-areas: "footer";
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0rem;
+  padding: 1rem 2rem;
   border-top: 1px solid black;
   background-color: #f8eee3; }
   .footer_index .footer_logo {
@@ -55,22 +57,25 @@ body {
   .footer_index .contenedores_footer_logoredes {
     display: flex;
     align-items: center;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    border-radius: 5rem; }
     .footer_index .contenedores_footer_logoredes .a {
       text-decoration: none;
       color: black; }
     .footer_index .contenedores_footer_logoredes:hover {
-      background-color: #93b49e;
+      background-color: #aac2b2;
       transform: scale(1, 1);
       transition: all 1s;
-      border-radius: 5rem; }
+      font-style: initial;
+      color: #FBF9F8;
+      border: 1px solid #93b49e; }
     .footer_index .contenedores_footer_logoredes .logo_redes_footer {
       width: 25px; }
 
 /*CAMBIO EN EL FOOTER GENERAL*/
 @media only screen and (max-width: 460px) {
   .footer_index {
-    display: inline; }
+    flex-direction: column; }
     .footer_index .footer_imagen {
       margin: 0.5rem 0rem; }
     .footer_index .footer_logo {
@@ -118,7 +123,7 @@ body {
   justify-content: center; }
   .main .imagen_main {
     width: 1200px;
-    margin: 1rem; }
+    margin: 0rem 1rem 0rem 0rem; }
   .main .titulo_main {
     margin: 1rem 1rem; }
   .main .main p {
@@ -126,18 +131,15 @@ body {
     padding: 1rem 1rem; }
   .main .button a {
     display: inline-block;
-    text-align: center;
     margin: 1.5rem 1rem;
-    border-radius: 5rem;
-    padding: 0.5rem 1.5rem;
-    background-color: #DFB59D;
-    text-decoration: none;
-    color: #564242; }
+    background-color: #DFB59D; }
     .main .button a:hover {
-      background-color: #93b49e;
-      color: #FBF9F8;
+      background-color: #aac2b2;
       transform: scale(1, 1);
-      transition: all 0.9s; }
+      transition: all 1s;
+      font-style: initial;
+      color: #FBF9F8;
+      border: 1px solid #93b49e; }
 
 /*PANTALLAS XS SM MD INDEX*/
 @media only screen and (max-width: 980px) {
@@ -146,21 +148,16 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 85% 305px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/ }
     .grilla_idx .headerix {
       grid-area: "header";
       /*MAIN destacados*/
       /*FOOTER*/ }
       .grilla_idx .headerix .sectionix {
-        grid-area: "main";
-        display: inline;
-        flex-direction: column;
-        text-align: center; }
+        display: flex; }
         .grilla_idx .headerix .sectionix .main {
-          display: inline;
+          display: inline-block;
           flex-direction: column;
           text-align: center;
           padding: 2rem; }
@@ -170,8 +167,8 @@ body {
           .grilla_idx .headerix .sectionix .main .imagen_main {
             width: 100%;
             margin: 0.1rem; }
-          .grilla_idx .headerix .sectionix .main #alo {
-            display: inline;
+          .grilla_idx .headerix .sectionix .main #idea {
+            display: inline-block;
             flex-direction: column;
             text-align: center; }
       .grilla_idx .headerix .footer_index {
@@ -184,9 +181,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 90% 255px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN destacados*/
     /*FOOTER*/ }
@@ -204,26 +199,28 @@ body {
   font-weight: bolder;
   font-style: normal;
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   justify-content: center; }
 
 .main_infons {
   display: flex;
   align-items: center;
-  margin: 2rem 2rem;
+  margin: 4rem 2rem;
   justify-content: center;
   gap: 1rem;
   box-shadow: 2px 8px 4px 2px rgba(0, 0, 0, 0.49); }
   .main_infons .h2_div_inf {
-    margin-bottom: 1.4rem 1rem;
+    margin: 1.4rem 1rem;
     padding: 0rem 1rem; }
   .main_infons .parrafo_nos {
-    margin-bottom: 1.4rem 1rem;
-    padding: 1.4rem 1rem; }
+    margin: 0rem 1rem;
+    margin-bottom: 1rem;
+    padding: 0rem 1rem;
+    font-size: larger; }
   .main_infons .imagenes_indv {
     margin: 1rem;
-    height: 200px;
+    height: 40%;
     width: 40%;
     filter: brightness(100%); }
 
@@ -241,15 +238,13 @@ body {
       transition: all 1s; }
 
 /*PANTALLAS XS SM MD NOSOTRAS*/
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 990px) {
   /*General*/
   .grilla_nos {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: none 90% 305px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-rows: none 105% 305px;
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN Nosotros*/
     /*FOOTER*/ }
@@ -257,16 +252,22 @@ body {
       grid-area: "header"; }
     .grilla_nos .main_nos {
       grid-area: "main";
-      margin: 0rem; }
+      margin: 0rem;
+      padding: 0px; }
       .grilla_nos .main_nos .h2_nos {
         font-size: 200%; }
       .grilla_nos .main_nos .main_infons {
         display: inline-block;
         display: flex;
+        margin: 2rem 0.45rem;
         flex-direction: column;
         text-align: center; }
         .grilla_nos .main_nos .main_infons .imagenes_indv {
           width: 90%; }
+      .grilla_nos .main_nos .imagenes_indv {
+        margin: 1rem;
+        height: 50%;
+        width: 100%; }
       .grilla_nos .main_nos #filo {
         display: inline-block;
         flex-direction: column;
@@ -276,20 +277,18 @@ body {
         display: block;
         text-align: center; }
         .grilla_nos .main_nos .socios_img .integrantes {
-          margin: 0.1rem; }
+          margin: 5%; }
     .grilla_nos .footer_index {
       grid-area: "footer"; } }
 
 /*PANTALLAS LG Nosotras*/
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 990px) {
   /*General*/
   .grilla_nos {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 205px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*MAIN Nosotros*/
     /*FOOTER*/ }
     .grilla_nos .main_nos {
@@ -312,27 +311,32 @@ body {
   justify-content: center;
   align-items: center;
   gap: auto;
-  margin: 2rem 0.3rem;
+  margin: 3rem 2.3rem;
   text-align: center; }
   .section_tarjetas .tarjetas {
     background-color: #f8eee3;
     width: 30%;
     box-shadow: 2px 8px 4px 2px rgba(0, 0, 0, 0.49); }
     .section_tarjetas .tarjetas:hover {
+      background-color: #aac2b2;
       transform: scale(10.5px, 10.5px);
       transition: all 1s;
       font-style: initial;
+      color: #FBF9F8;
       border: 1px solid #93b49e;
-      background-color: #93b49e; }
+      font-style: initial; }
     .section_tarjetas .tarjetas .imagen_tarjeta {
       padding: 0.1rem;
       width: 100%;
       border: 4px double #FBF9F8; }
     .section_tarjetas .tarjetas h3 {
       padding: 0.5rem 0.5rem;
+      font-weight: 700;
       font-size: 120%;
       font-style: normal;
       font-family: 'Courier New', Courier, monospace; }
+    .section_tarjetas .tarjetas p {
+      padding: 1rem; }
 
 /*PANTALLAS XS SM MD  DESTACADOS*/
 @media only screen and (max-width: 920px) {
@@ -341,9 +345,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 65% 305px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN destacados*/
     /*FOOTER*/ }
@@ -369,9 +371,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 60% 255px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN Destacados*/
     /*FOOTER*/ }
@@ -398,25 +398,25 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-  grid-template-areas: "artículo"
- "artículo"
- "artículo"
- "artículo"
- "artículo"; }
-  .cont_biblio #principal:hover {
+  grid-template-areas: "artículo" "artículo" "artículo" "artículo" "artículo"; }
+  .cont_biblio:hover {
     background-color: #aac2b2;
     transform: scale(10.5px, 10.5px);
-    transition: all 1s; }
+    transition: all 1s;
+    font-style: initial;
+    color: #FBF9F8;
+    border: none; }
   .cont_biblio .articulos {
     grid-area: "artículo";
     margin: 1%;
     padding: 1%;
     border: 1.5px #564242 solid; }
     .cont_biblio .articulos:hover {
-      background-color: #93b49e;
+      background-color: #aac2b2;
       transform: scale(10.5px, 10.5px);
       transition: all 1s;
       font-style: initial;
+      color: #FBF9F8;
       border: none; }
     .cont_biblio .articulos .h3_biblio {
       font-family: 'Courier New', Courier, monospace; }
@@ -441,9 +441,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 100% 355px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN bibliotecas*/
     /*FOOTER*/ }
@@ -454,8 +452,7 @@ body {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 49% 48%;
-      grid-template-areas: "main" 
- "aside";
+      grid-template-areas: "main"  "aside";
       gap: 3%; }
       .grilla .main_biblio .cont_main {
         margin: 0.5rem;
@@ -475,9 +472,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 155px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN bibliotecas*/
     /*FOOTER*/ }
@@ -518,14 +513,14 @@ body {
       margin: 0.2rem; }
     .section form #button_submit {
       margin: 2rem 0rem;
-      border-radius: 2rem;
-      padding: 0.3rem 1.5rem;
-      background-color: #DFB59D;
-      text-decoration: none; }
+      background-color: #DFB59D; }
       .section form #button_submit:hover {
-        background-color: #93b49e;
-        color: antiquewhite;
-        transform: scale(1, 1); }
+        background-color: #aac2b2;
+        transform: scale(1, 1);
+        transition: all 1s;
+        font-style: initial;
+        color: #FBF9F8;
+        border: 1px solid #93b49e; }
 
 /*PANTALLAS  XS SM MD CONTACTO*/
 @media only screen and (max-width: 800px) {
@@ -534,9 +529,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 80% 355px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN contacto*/ }
     .grilla_cont header {
@@ -546,8 +539,7 @@ body {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "form" 
- "photo";
+      grid-template-areas: "form"  "photo";
       /*FOOTER*/ }
       .grilla_cont .section form {
         grid-area: "form";
@@ -567,9 +559,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: none 100% 205px;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     /*HEADER*/
     /*MAIN contacto*/
     /*FOOTER*/ }

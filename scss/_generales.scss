@@ -14,7 +14,7 @@
     color:#FBF9F8;
     border:$border;
  }
- .button_model{
+ .buttons_model{
     border-radius: 5rem;
     text-decoration: none;
     color: #564242;
@@ -53,8 +53,7 @@ body{
     grid-template-areas:"footer";
     display: flex;
     justify-content:space-around;
-    align-items: center;
-    padding: 1rem 0rem;
+    padding: 1rem 2rem;
     border-top: 1px solid black; 
     background-color:#f8eee3;
     .footer_logo{
@@ -88,7 +87,7 @@ body{
     /*CAMBIO EN EL FOOTER GENERAL*/
 @media only screen and ( max-width:460px){
     .footer_index{
-        display: inline;
+        flex-direction: column;
         .footer_imagen{
             margin: 0.5rem 0rem;
         }
