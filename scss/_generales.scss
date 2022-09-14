@@ -78,7 +78,7 @@ body{
             color: black;
         }
         &:hover{
-            @include clicks(1px solid #93b49e,scale(1,1),)
+            @include clicks(1px solid #93b49e,scale(1,1),white)
         }
         .logo_redes_footer{
             width:25px ;

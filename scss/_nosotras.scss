@@ -43,9 +43,9 @@
         width: 15%;
         border-radius:90%;
         margin: 2rem;
-        filter:brightness(10%);
+        filter:brightness(70%);
         &:hover{ 
-            filter:brightness(50);
+            filter:brightness(100%);
             transition: all 1s;
         }
     }
@@ -97,6 +97,7 @@
             display: block;
             text-align: center;
             .integrantes{ 
+                width: 30%;
                 margin:5%;
             }
         } 
