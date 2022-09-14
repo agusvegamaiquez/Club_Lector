@@ -7,7 +7,7 @@
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
-.buttons_model, header .nav-link, .main .button a, .section form #button_submit {
+.buttons_model, header .nav-link, .contenedor_inidx .button a, .section form #button_submit {
   border-radius: 5rem;
   text-decoration: none;
   color: #564242;
@@ -31,7 +31,7 @@ header {
       transform: scale(1, 1);
       transition: all 1s;
       font-style: initial;
-      color: #FBF9F8;
+      color: white;
       border: 1px solid #93b49e; }
 
 /*MAIN*/
@@ -67,7 +67,7 @@ body {
       transform: scale(1, 1);
       transition: all 1s;
       font-style: initial;
-      color: #FBF9F8;
+      color: white;
       border: 1px solid #93b49e; }
     .footer_index .contenedores_footer_logoredes .logo_redes_footer {
       width: 25px; }
@@ -115,30 +115,30 @@ body {
 #idea {
   flex-direction: row-reverse; }
 
-.main {
+.contenedor_inidx {
   display: flex;
   align-items: center;
   margin: auto;
   padding: 2rem;
   justify-content: center; }
-  .main .imagen_main {
+  .contenedor_inidx .imagen_main {
     width: 1200px;
     margin: 0rem 1rem 0rem 0rem; }
-  .main .titulo_main {
+  .contenedor_inidx .titulo_main {
     margin: 1rem 1rem; }
-  .main .main p {
+  .contenedor_inidx .parrafo_main {
     margin-bottom: 2rem;
     padding: 1rem 1rem; }
-  .main .button a {
+  .contenedor_inidx .button a {
     display: inline-block;
     margin: 1.5rem 1rem;
     background-color: #DFB59D; }
-    .main .button a:hover {
+    .contenedor_inidx .button a:hover {
       background-color: #aac2b2;
       transform: scale(1, 1);
       transition: all 1s;
       font-style: initial;
-      color: #FBF9F8;
+      color: white;
       border: 1px solid #93b49e; }
 
 /*PANTALLAS XS SM MD INDEX*/
@@ -156,12 +156,16 @@ body {
       /*FOOTER*/ }
       .grilla_idx .headerix .sectionix {
         display: flex; }
+        .grilla_idx .headerix .sectionix .contenedor_inidx {
+          display: inline-block;
+          flex-direction: column;
+          text-align: center; }
         .grilla_idx .headerix .sectionix .main {
           display: inline-block;
           flex-direction: column;
           text-align: center;
           padding: 2rem; }
-          .grilla_idx .headerix .sectionix .main .main p {
+          .grilla_idx .headerix .sectionix .main .parrafo_main {
             margin-bottom: 1rem;
             padding: 0.1rem; }
           .grilla_idx .headerix .sectionix .main .imagen_main {
@@ -311,18 +315,20 @@ body {
   justify-content: center;
   align-items: center;
   gap: auto;
-  margin: 3rem 2.3rem;
+  margin: 1rem 0.3rem;
   text-align: center; }
   .section_tarjetas .tarjetas {
     background-color: #f8eee3;
     width: 30%;
+    margin: 1rem;
+    padding: 0rem;
     box-shadow: 2px 8px 4px 2px rgba(0, 0, 0, 0.49); }
     .section_tarjetas .tarjetas:hover {
       background-color: #aac2b2;
       transform: scale(10.5px, 10.5px);
       transition: all 1s;
       font-style: initial;
-      color: #FBF9F8;
+      color: black;
       border: 1px solid #93b49e;
       font-style: initial; }
     .section_tarjetas .tarjetas .imagen_tarjeta {
@@ -357,9 +363,9 @@ body {
         font-size: 200%;
         text-align: center; }
       .grilla_dest .sectiond .tarjetas {
+        padding: 0rem;
         background-color: #f8eee3;
-        width: 100%;
-        padding: 0.5rem 1rem; }
+        width: 100%; }
     .grilla_dest .footer_index {
       grid-area: "footer";
       /*NO ANDA Y NO ENTIENDO PQ, DESAPARECE EL BACKGROUNG COLOR Y EL BORDER*/ } }
@@ -399,13 +405,6 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-areas: "artículo" "artículo" "artículo" "artículo" "artículo"; }
-  .cont_biblio:hover {
-    background-color: #aac2b2;
-    transform: scale(10.5px, 10.5px);
-    transition: all 1s;
-    font-style: initial;
-    color: #FBF9F8;
-    border: none; }
   .cont_biblio .articulos {
     grid-area: "artículo";
     margin: 1%;
@@ -416,7 +415,7 @@ body {
       transform: scale(10.5px, 10.5px);
       transition: all 1s;
       font-style: initial;
-      color: #FBF9F8;
+      color: white;
       border: none; }
     .cont_biblio .articulos .h3_biblio {
       font-family: 'Courier New', Courier, monospace; }
@@ -493,7 +492,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  height: calc(100vh - 131px - 156px); }
   .section .imagen_contacto {
     margin: 8px;
     width: 40%;
@@ -519,7 +519,7 @@ body {
         transform: scale(1, 1);
         transition: all 1s;
         font-style: initial;
-        color: #FBF9F8;
+        color: white;
         border: 1px solid #93b49e; }
 
 /*PANTALLAS  XS SM MD CONTACTO*/
@@ -565,7 +565,8 @@ body {
     /*FOOTER*/ }
     .grilla_cont .header {
       grid-area: "header"; }
-    .grilla_cont .grilla_cont {
-      grid-area: "main"; }
+    .grilla_cont .section {
+      grid-area: "main";
+      height: calc(100vh - 131px - 156px); }
     .grilla_cont .footer_index {
       grid-area: "footer"; } }

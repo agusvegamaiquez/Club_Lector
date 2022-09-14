@@ -9,9 +9,6 @@
     justify-content: center;
 }
 .cont_biblio{
-    &:hover{
-        @include clicks(none,scale(10.5px,10.5px))
-    }
     margin: 1rem 1rem;
     display: grid;
     grid-template-columns:100%;
@@ -28,7 +25,7 @@
         padding: 1%;
         border: 1.5px #564242 solid;
         &:hover{
-            @include clicks(none,scale(10.5px,10.5px))
+            @include clicks(none,scale(10.5px,10.5px),white)
         }
         .h3_biblio{
             font-family: 'Courier New', Courier, monospace;

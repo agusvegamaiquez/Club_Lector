@@ -32,7 +32,7 @@
             margin:2rem 0rem;
             background-color:#DFB59D;
             &:hover{
-                @include clicks(1px solid #93b49e,scale(1,1))
+                @include clicks(1px solid #93b49e,scale(1,1),white)
             }
         }
     }

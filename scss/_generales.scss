@@ -6,12 +6,12 @@
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
- @mixin clicks($border,$transform_scale) {
+ @mixin clicks($border,$transform_scale,$color_lettter) {
     background-color: #aac2b2;
     transform: $transform_scale;
     transition: all 1s;
     font-style:initial;
-    color:#FBF9F8;
+    color:$color_lettter;
     border:$border;
  }
  .buttons_model{
@@ -38,7 +38,8 @@ header {
         background-color:#f8f0e7 ;
         border:1px solid #DFB59D;
         &:hover{ 
-            @include clicks(1px solid #93b49e,scale(1,1))
+            @include clicks(1px solid #93b49e,scale(1,1), white
+            )
         }
     }
 }
@@ -77,7 +78,7 @@ body{
             color: black;
         }
         &:hover{
-            @include clicks(1px solid #93b49e,scale(1,1))
+            @include clicks(1px solid #93b49e,scale(1,1), white)
         }
         .logo_redes_footer{
             width:25px ;

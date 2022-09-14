@@ -10,7 +10,7 @@
 #idea{
     flex-direction: row-reverse;
 }
-.main {
+.contenedor_inidx {
     display: flex;
     align-items: center;
     margin: auto;
@@ -23,7 +23,7 @@
     .titulo_main {
         margin: 1rem 1rem;
     }
-    .main p{
+    .parrafo_main{
         margin-bottom:2rem;
         padding:1rem 1rem;
     }
@@ -34,12 +34,12 @@
         margin: 1.5rem 1rem;
         background-color:#DFB59D;
         &:hover{ 
-            @include clicks(1px solid #93b49e,scale(1,1))
+            @include clicks(1px solid #93b49e,scale(1,1), white)
         }
     }
 }
 /*PANTALLAS XS SM MD INDEX*/
-@media only screen and ( max-width:980px){
+@media only screen and (max-width: 980px){
     /*General*/
     .grilla_idx{
         display: grid;
@@ -54,12 +54,17 @@
         /*MAIN destacados*/
         .sectionix{
             display: flex;
+            .contenedor_inidx{
+                display: inline-block;
+                flex-direction: column;
+                text-align: center;
+            }
             .main{
                 display: inline-block;
                 flex-direction: column;
                 text-align: center;
                 padding: 2rem;
-                .main p{
+                .parrafo_main{
                     margin-bottom:1rem;
                     padding:0.1rem;
                 }
