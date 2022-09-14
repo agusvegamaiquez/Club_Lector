@@ -7,7 +7,7 @@
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
-.buttons_model, header .nav-link, .contenedor_inidx .button a, .section form #button_submit {
+.buttons_model, header .nav-link, .contenedor_inidx .button a, .section_tarjetas .tarjetas .buttondes a, .boton_subir a, .section form #button_submit {
   border-radius: 5rem;
   text-decoration: none;
   color: #564242;
@@ -237,7 +237,7 @@ body {
   .socios_img .integrantes {
     width: 15%;
     border-radius: 90%;
-    margin: 2rem;
+    margin: 2%;
     filter: brightness(70%); }
     .socios_img .integrantes:hover {
       filter: brightness(100%);
@@ -283,7 +283,7 @@ body {
         display: block;
         text-align: center; }
         .grilla_nos .main_nos .socios_img .integrantes {
-          width: 30%;
+          width: 20%;
           margin: 5%; }
     .grilla_nos .footer_index {
       grid-area: "footer"; } }
@@ -346,6 +346,25 @@ body {
       font-family: 'Courier New', Courier, monospace; }
     .section_tarjetas .tarjetas p {
       padding: 1rem; }
+    .section_tarjetas .tarjetas .buttondes a {
+      display: inline-block;
+      margin: 1.5rem 1rem;
+      background-color: #DFB59D; }
+
+.boton_subir a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 2rem;
+  background-color: none;
+  border: 1px solid #DFB59D; }
+  .boton_subir a:hover {
+    background-color: #aac2b2;
+    transform: scale(1, 1);
+    transition: all 1s;
+    font-style: initial;
+    color: white;
+    border: 1px solid #93b49e; }
 
 /*PANTALLAS XS SM MD  DESTACADOS*/
 @media only screen and (max-width: 920px) {
@@ -453,9 +472,8 @@ body {
       grid-area: "main";
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 49% 48%;
-      grid-template-areas: "main"  "aside";
-      gap: 3%; }
+      grid-template-rows: 55% 45%;
+      grid-template-areas: "main"  "aside"; }
       .grilla .main_biblio .cont_main {
         margin: 0.5rem;
         padding: 0.5rem; }

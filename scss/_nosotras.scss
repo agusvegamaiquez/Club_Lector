@@ -42,7 +42,7 @@
     .integrantes{
         width: 15%;
         border-radius:90%;
-        margin: 2rem;
+        margin: 2%;
         filter:brightness(70%);
         &:hover{ 
             filter:brightness(100%);
@@ -97,7 +97,7 @@
             display: block;
             text-align: center;
             .integrantes{ 
-                width: 30%;
+                width: 20%;
                 margin:5%;
             }
         } 

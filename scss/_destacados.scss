@@ -41,6 +41,25 @@
         & p{
             padding: 1rem; 
         }
+        .buttondes a{
+            @extend .buttons_model;
+            display: inline-block;
+            margin: 1.5rem 1rem;
+            background-color:#DFB59D;
+
+        }
+    }
+}
+.boton_subir a{
+    @extend .buttons_model;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    background-color:none;
+    border:1px solid #DFB59D;
+    &:hover{ 
+        @include clicks(1px solid #93b49e,scale(1,1), white)
     }
 }
 /*PANTALLAS XS SM MD  DESTACADOS*/

@@ -68,10 +68,9 @@
             grid-area:"main";
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows:49% 48%;
+            grid-template-rows:55% 45%;
             grid-template-areas:"main" 
                                 "aside";
-            gap: 3%;
             .cont_main{
                 margin:0.5rem;
                 padding:0.5rem
