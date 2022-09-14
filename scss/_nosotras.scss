@@ -39,12 +39,13 @@
 .socios_img{
     display: flex;
     justify-content: space-around;
-    .integrantes{ 
-        
+    .integrantes{
+        width: 15%;
+        border-radius:90%;
         margin: 2rem;
-        filter: invert(20%);
+        filter:brightness(10%);
         &:hover{ 
-            filter: invert(0%);
+            filter:brightness(50);
             transition: all 1s;
         }
     }

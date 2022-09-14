@@ -235,10 +235,12 @@ body {
   display: flex;
   justify-content: space-around; }
   .socios_img .integrantes {
+    width: 15%;
+    border-radius: 90%;
     margin: 2rem;
-    filter: invert(20%); }
+    filter: grayscale(90%); }
     .socios_img .integrantes:hover {
-      filter: invert(0%);
+      filter: grayscale(0%);
       transition: all 1s; }
 
 /*PANTALLAS XS SM MD NOSOTRAS*/
@@ -492,8 +494,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  justify-items: center;
-  height: calc(100vh - 131px - 156px); }
+  justify-items: center; }
   .section .imagen_contacto {
     margin: 8px;
     width: 40%;
@@ -567,6 +568,6 @@ body {
       grid-area: "header"; }
     .grilla_cont .section {
       grid-area: "main";
-      height: calc(100vh - 131px - 156px); }
+      height: calc(100vh - 18px - 156px); }
     .grilla_cont .footer_index {
       grid-area: "footer"; } }
