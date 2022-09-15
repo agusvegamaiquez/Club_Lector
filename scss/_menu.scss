@@ -27,7 +27,6 @@
         margin-bottom:2rem;
         padding:1rem 1rem;
     }
-    
     .button a{
         @extend .buttons_model;
         display: inline-block;
@@ -38,8 +37,7 @@
         }
     }
 }
-/*PANTALLAS XS SM MD INDEX*/
-@media only screen and (max-width: 980px){
+@media only screen and ( max-width:980px){
     /*General*/
     .grilla_idx{
         display: grid;
@@ -48,22 +46,17 @@
         grid-template-areas:"header"
                             "main"
                             "footer";
-    /*HEADER*/
-    .headerix{
-        grid-area:"header";
-        /*MAIN destacados*/
-        .sectionix{
+        /*HEADER*/
+        .headerix{
+            grid-area:"header";
+         /*MAIN Index*/
+         .sectionix{
+            grid-area: "main";
             display: flex;
             .contenedor_inidx{
                 display: inline-block;
                 flex-direction: column;
                 text-align: center;
-            }
-            .main{
-                display: inline-block;
-                flex-direction: column;
-                text-align: center;
-                padding: 2rem;
                 .parrafo_main{
                     margin-bottom:1rem;
                     padding:0.1rem;
@@ -78,14 +71,15 @@
                     text-align: center; 
                 }
             }
-    }    
-    /*FOOTER*/
-    .footer_index{
-        grid-area:"footer";
-    }  
-    }  
+        /*FOOTER*/
+        .footer_index{
+            grid-area:"footer";
+        } 
+         }
+        }
+    }
 }
-    }  
+
 /*PANTALLAS LG INDEX*/
 @media only screen and (min-width:980px ){
     /*General*/

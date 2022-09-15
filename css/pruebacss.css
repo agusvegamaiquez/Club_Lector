@@ -141,7 +141,6 @@ body {
       color: white;
       border: 1px solid #93b49e; }
 
-/*PANTALLAS XS SM MD INDEX*/
 @media only screen and (max-width: 980px) {
   /*General*/
   .grilla_idx {
@@ -152,31 +151,27 @@ body {
     /*HEADER*/ }
     .grilla_idx .headerix {
       grid-area: "header";
-      /*MAIN destacados*/
-      /*FOOTER*/ }
+      /*MAIN Index*/ }
       .grilla_idx .headerix .sectionix {
-        display: flex; }
+        grid-area: "main";
+        display: flex;
+        /*FOOTER*/ }
         .grilla_idx .headerix .sectionix .contenedor_inidx {
           display: inline-block;
           flex-direction: column;
           text-align: center; }
-        .grilla_idx .headerix .sectionix .main {
-          display: inline-block;
-          flex-direction: column;
-          text-align: center;
-          padding: 2rem; }
-          .grilla_idx .headerix .sectionix .main .parrafo_main {
+          .grilla_idx .headerix .sectionix .contenedor_inidx .parrafo_main {
             margin-bottom: 1rem;
             padding: 0.1rem; }
-          .grilla_idx .headerix .sectionix .main .imagen_main {
+          .grilla_idx .headerix .sectionix .contenedor_inidx .imagen_main {
             width: 100%;
             margin: 0.1rem; }
-          .grilla_idx .headerix .sectionix .main #idea {
+          .grilla_idx .headerix .sectionix .contenedor_inidx #idea {
             display: inline-block;
             flex-direction: column;
             text-align: center; }
-      .grilla_idx .headerix .footer_index {
-        grid-area: "footer"; } }
+        .grilla_idx .headerix .sectionix .footer_index {
+          grid-area: "footer"; } }
 
 /*PANTALLAS LG INDEX*/
 @media only screen and (min-width: 980px) {
@@ -238,7 +233,7 @@ body {
     width: 15%;
     border-radius: 90%;
     margin: 2%;
-    filter: brightness(70%); }
+    filter: brightness(60%); }
     .socios_img .integrantes:hover {
       filter: brightness(100%);
       transition: all 1s; }
